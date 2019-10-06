@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-// NativeBase Components
 import {
   Text,
   Button,
@@ -15,7 +14,7 @@ import {
   Header
 } from "native-base";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <Content>
       <Header transparent />
@@ -49,10 +48,10 @@ const Login = () => {
             </Form>
           </Body>
         </ListItem>
-        <Button full success>
+        <Button onPress={() => navigation.navigate("ListScreen")}>
           <Text>Login</Text>
         </Button>
-        <Button full warning>
+        <Button onPress={() => navigation.navigate("ListScreen")}>
           <Text>Register</Text>
         </Button>
       </List>

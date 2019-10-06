@@ -19,7 +19,7 @@ const CoffeeCart = () => {
   return (
     <List>
       {cartItems}
-      <Button full danger>
+      <Button>
         <Text>Checkout</Text>
       </Button>
     </List>
