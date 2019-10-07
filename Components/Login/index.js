@@ -48,10 +48,10 @@ const Login = ({ navigation }) => {
             </Form>
           </Body>
         </ListItem>
-        <Button onPress={() => navigation.navigate("ListScreen")}>
+        <Button full success onPress={() => navigation.navigate("ListScreen")}>
           <Text>Login</Text>
         </Button>
-        <Button onPress={() => navigation.navigate("ListScreen")}>
+        <Button full warning onPress={() => navigation.navigate("ListScreen")}>
           <Text>Register</Text>
         </Button>
       </List>

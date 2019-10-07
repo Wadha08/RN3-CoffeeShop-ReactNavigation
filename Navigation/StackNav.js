@@ -1,12 +1,11 @@
-import CoffeeList from "../CoffeeList/index";
-import CoffeeDetail from "../CoffeeDetail/index";
-import CoffeeCart from "../CoffeeCart/index";
-import Login from "../Login/index";
-import HomePage from "../Components/HomePage";
+import CoffeeList from "../Components/CoffeeList";
+import CoffeeDetail from "../Components/CoffeeDetail";
+import CoffeeCart from "../Components/CoffeeCart";
+import Login from "../Components/Login";
+import { createStackNavigator } from "react-navigation-stack";
 
 const StackNav = createStackNavigator(
   {
-    Home: HomePage,
     List: CoffeeList,
     Detail: CoffeeDetail,
     Cart: CoffeeCart,

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { observer } from "mobx-react";
 
 // NativeBase Components
 import { List, Content, Button, Icon } from "native-base";
@@ -33,4 +32,4 @@ CoffeeList.navigationOptions = ({ navigation }) => {
     )
   };
 };
-export default observer(CoffeeList);
+export default CoffeeList;
