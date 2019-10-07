@@ -8,9 +8,11 @@ import { ListItem, Card, CardItem, Thumbnail, Text, Left } from "native-base";
 import styles from "./styles";
 
 import { withNavigation } from "react-navigation";
-const CoffeeItem = ({ cafe, navigation }) => {
+const CoffeeItem = props => {
+  const { cafe } = props;
+  const { navigation } = props;
   const handlePress = () => {
-    navigation.navigate("DetailScreen", { cafeID: cafe.id });
+    navigation.navigate("Detail", { cafeID: cafe.id });
   };
   return (
     <ImageBackground

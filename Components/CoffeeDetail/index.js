@@ -88,7 +88,7 @@ class CoffeeDetail extends Component {
               </Picker>
             </Body>
           </ListItem>
-          <Button full danger>
+          <Button full danger onPress={() => navigation.navigate("Cart")}>
             <Text>Add</Text>
           </Button>
         </List>
@@ -104,10 +104,7 @@ CoffeeDetail.navigationOptions = ({ navigation }) => {
   return {
     title: cafe.name,
     headerRight: (
-      <Button
-        transparent
-        onPress={() => navigation.navigate("CartScreen")}
-      ></Button>
+      <Button transparent onPress={() => navigation.navigate("Cart")}></Button>
     )
   };
 };

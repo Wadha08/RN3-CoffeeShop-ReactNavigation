@@ -14,7 +14,8 @@ import {
   Header
 } from "native-base";
 
-const Login = ({ navigation }) => {
+const Login = props => {
+  const { navigation } = props;
   return (
     <Content>
       <Header transparent />
@@ -48,10 +49,10 @@ const Login = ({ navigation }) => {
             </Form>
           </Body>
         </ListItem>
-        <Button full success onPress={() => navigation.navigate("ListScreen")}>
+        <Button full success onPress={() => navigation.replace("List")}>
           <Text>Login</Text>
         </Button>
-        <Button full warning onPress={() => navigation.navigate("ListScreen")}>
+        <Button full warning onPress={() => navigation.replace("List")}>
           <Text>Register</Text>
         </Button>
       </List>
